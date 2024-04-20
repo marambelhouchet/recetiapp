@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "928719652729",
+    "project_id": "receti-9e4a9",
+    "storage_bucket": "receti-9e4a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928719652729:android:0ee9a12463cf163de1d1a8",
+        "android_client_info": {
+          "package_name": "com.example.receti"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrkIatkhk9NEK6RYok1f5sD2KFTnaAJdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

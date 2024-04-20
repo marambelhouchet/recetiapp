@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DFA9A5"
+        android:backgroundTint="#D18989"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="#DF9994"
+                android:text="welcome_to_recettii"
+
+                android:textAlignment="center"
+                android:textColor="#833939"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-104dp"
+            android:layout_marginEnd="231dp"
+            app:srcCompat="@drawable/img" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="272dp"
+            android:layout_height="185dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="-53dp"
+            android:onClick="onClick"
+            android:text="Add a recepie"
+            android:textColor="#D5B6B6"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_above="@+id/editTextTextEmailAddress"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="133dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="91dp"
+            android:layout_marginBottom="-3dp"
+            android:shadowColor="#95586C"
+            android:text="your e-mail"
+            android:textColor="#95586C"
+            android:textColorHighlight="#95586C"
+            android:textColorHint="#95586C"
+            android:textColorLink="#95586C"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-59dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="409dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/recipeadded"
+            android:layout_width="match_parent"
+            android:layout_height="261dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-2dp"
+            android:layout_marginBottom="69dp"
+            android:hint="write here The recipe you want to add"
+            android:textAlignment="center"
+            android:textColorHint="#95586C"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="265dp"
+            android:layout_marginBottom="21dp"
+            android:backgroundTint="#8A3434"
+            android:onClick="onClick"
+            android:text="send to admin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="269dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="317dp"
+            android:layout_marginEnd="4dp"
+            android:text="Recipe origins(korean...)"
+            android:textColor="#95586C"
+            android:textColorHighlight="#95586C"
+            android:textColorHint="#95586C"
+            android:textColorLink="#95586C"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView8"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="69dp"
+            android:layout_marginBottom="330dp"
+            android:ems="10"
+            android:inputType="text" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
